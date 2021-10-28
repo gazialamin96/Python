@@ -1,0 +1,116 @@
+# This is a sample Python script.
+
+# Press Shift+F10 to execute it or replace it with your code.
+# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+
+
+def print_hi(name):
+    # Use a breakpoint in the code line below to debug your script.
+    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+
+
+# Press the green button in the gutter to run the script.
+if __name__ == '__main__':
+    print_hi('Gazi!')
+
+
+print("Birth Converter")
+age = int(input("Enter your age = "))
+converter = 2021- age
+print(f"Your Age is Now = {converter} years!")
+
+
+print("first = 10.1 Second = 20 sum = 30.1")
+
+first = float(input("Enter Your First Value : "))
+second = float(input("Enter Your second Value : "))
+sum = first + second
+print(f"Sum is = {sum}")
+
+
+print("Uses of string!")
+
+course = "Python is career Changing Course for Beginner"
+print(course.find('is'))
+print(course.replace('career', "Career"))
+print(course)
+
+price = 25
+print(price < 10 or price > 30)
+
+
+    # *
+    # **
+    # ***
+    # ****
+
+i =1
+while i <= 4:
+    print(i * "*")
+    i +=1
+
+print("Lists are there!")
+
+names = ["jhon", "Bob", "Al-AMIn"]
+print(names[0])   # print the first one
+print(names[-1])  # Print the last one
+
+lists = [1,2,3,4,5]
+print(lists.reverse())
+lists.append(6)
+print(f"Lenth of the Lists : {len(lists)}")
+print(f"Poped value is shown here : {lists.pop(1)}")
+lists.remove(3)
+print(lists)
+print(f"clear the list : {lists.clear()}")
+print(lists)
+
+print("All are the range in Python :")
+print("output is (0,1,2,3,4)")
+numbers1 = range(5)
+for num in numbers1:
+    print(num)
+
+print("output is (5 6 7 8 9)")
+numbers2 = range(5, 10)
+for num2 in numbers2:
+    print(num2)
+
+print("output is (5 7 9 11 13 15 17 19)")
+numbers3 = range(5, 20, 2)
+for num3 in numbers3:
+    print(num3)
+
+print("find the largest number in the list ")
+numbers5 = [1,15,17,15,16,15,14,18,19,12,10,19,20,26,123,1,5]
+max = numbers5[0]
+
+for number in numbers5:
+    if number > max:
+        max = number
+
+print(f"largest number is = {max}")
+
+print("find the minimum number in the list ")
+numbers6 = [1,15,17,15,16,15,14,18,19,12,10,19,20,26,123,1,5]
+min = numbers6[0]
+
+for number10 in numbers6:
+    if number10 < min:
+        min = number10
+
+print(f"Smallest number is = {min}")
+
+
+print("Write a program Remove a duplicate value in the list!")
+
+numbers15 = [1,15,17,15,16,15,14,18,19,12,10,19,20,26,123,1,5]
+unique =[]
+for number20 in numbers15:
+    if number20 not in unique:
+        unique.append(number20)
+print(unique)
+unique.sort()
+print(f"After sorting values {unique}")
+unique.reverse()
+print(f"After Decendding Order values are like that : {unique}")
